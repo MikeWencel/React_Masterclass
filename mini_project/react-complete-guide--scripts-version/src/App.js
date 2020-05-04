@@ -4,13 +4,23 @@ import Person from './Person/Person';
 
 
 function App() {
+
+  React.state = {
+    persons: [ 
+      {name:'Max',age: 28},
+      {name:'Josh',age: 28},
+      {name:'Mike',age: 28},
+      {name:'Katerina',age: 28}
+  
+  ]
+  }
   return (
     <div className="App">
   <h1>Hi, I'm a React App</h1>
-        <Person name="Mike" age="33">Hobby: Scuba-diving</Person>
-        <Person name="Daniel" age="26"/>
-        <Person name="Josh" age="26"/>
-        <Person name="Katerina" age="29"/>
+        <Person name={this.state.persons[0].name} age={this.state.persons[0].age}>Hobby: Scuba-diving</Person>
+        <Person name={this.state.persons[1].name} age={this.state.persons[1].age}/>
+        <Person name={this.state.persons[2].name} age={this.state.persons[2].age}/>
+        <Person name={this.state.persons[3].name} age={this.state.persons[3].age}/>
     </div>
   );
 }
