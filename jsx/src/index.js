@@ -8,7 +8,9 @@ import ReactDOM from 'react-dom'
 // Create a react Component
 //Function component
 const App = () => {
-    return <div>Hi there!</div>;
+    return <div>
+        <label className="label" for="name">Enter Name:</label>
+    </div>;
 };
 
 
