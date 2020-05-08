@@ -7,9 +7,20 @@ import ReactDOM from 'react-dom'
 
 // Create a react Component
 //Function component
+function getTime(){
+    return(new Date()).toLocaleTimeString()
+}
+
 const App = () => {
+const LabelText = 'Current Time:'
+
+
+    const buttonText = {text:'Click me'}
     return <div>
-        <label className="label" for="name">Enter Name:</label>
+        <div>{LabelText}</div>
+        <h1>{getTime()}</h1>
+            
+        
     </div>;
 };
 
